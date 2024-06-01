@@ -8,47 +8,66 @@
             background-color: #55aa52;
         }
 
-        .icon__sate {
-            max-width: 30%;
-            height: auto;
+        .container__utama {
+            display: flex;
             justify-content: center;
+            flex-direction: column;
+            text-align: center;
             align-items: center;
-            padding-left: 20px;
+            row-gap: 0.5rem;
+            box-sizing: border-box;
+        }
+
+        .icon__sate {
+            display: flex;
+            justify-content: center;
+            padding-top: 0.5rem;
+            overflow: hidden;
             border-radius: 20%;
         }
 
-        .nengahin__foto {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            gap: 30px;
+        .container__utama img {
+            max-width: 50%;
+            height: auto;
         }
 
-        .title__color {
-            color: azure;
+        .container__utama p {
+            font-size: 1.3rem;
+            text-align: center;
         }
 
-        .ukuran__font {
-            font-size: 1.5rem;
-        }
+        @media screen and (min-width: 768px){
+            body{
+                margin: 0;
+            }
 
-        .title__game {
-            margin-bottom: 40px;
+            .container__utama {
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                text-align: initial;
+                padding: 4rem 0;
+            }
+
+            .icon__sate {
+                width: 200px;
+                height: 200px;
+            }
+
+            .icon__sate img{
+                width: 165px;
+            }
         }
     </style>
 
     <title>Game Satwa Endemik Nusantara</title>
 </head>
 <body>
-    <div class="nengahin__foto">
+    <div class="container__utama">
         <img src="assets img/icon sate baru.png" class="icon__sate">
-
-        <div class="title__color">
-            <h1 class="title__game">GAME SATWA ENDEMIK NUSANTARA</h1>
-            <p class="ukuran__font">Satwa Endemik Nusantara adalah game edukasi literasi bertemakan satwa yang dilengkapi dengan cerita dongeng serta peta interaktif yang menyenangkan ! 🐯</p>
-            <a href="https://drive.google.com/file/d/1fwb3XD4Wua4uI7hC6cwE17-3Xh4jz6MI/view?usp=sharing">Download Game Satwa Endemik Nusantara</a>
-        </div>
+        <h2 class="title__game">GAME SATWA ENDEMIK NUSANTARA</h2>
+        <p class="ukuran__font">Satwa Endemik Nusantara adalah game edukasi literasi bertemakan satwa yang dilengkapi dengan cerita dongeng serta peta interaktif yang menyenangkan ! 🐯</p>
+        <a href="https://drive.google.com/file/d/1fwb3XD4Wua4uI7hC6cwE17-3Xh4jz6MI/view?usp=sharing">Download Game Satwa Endemik Nusantara</a>
+    </div>
     </div>
 </body>
 </html>
